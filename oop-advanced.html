@@ -1,0 +1,286 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Final Portfolio - Richard Hanxu</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+<img class= "logo" src="http://i63.tinypic.com/358x7nq.png" alt="Final Portfolio"></a>
+<!-- Header Container -->
+  <div class="header-container">
+    <div class= "header-icon">
+        <a href="home.html"><h3>Home</h3></a>
+	</div>
+    <div id="lessons-icon" class="header-icon">
+      <a href="oop-advanced.html"><h3>Lessons</h3></a>
+      <div class="lessons-menu">
+        <div class="lessons-grid">
+          <div class="lessons-grid-box">
+		    <a href="about-me.html">
+            <div>
+              <img class="lessons-title-image" src="http://i68.tinypic.com/28mgrd1.jpg" alt="About Me">
+              <h3 class="lessons-label">About Me</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="oop-basics.html">
+            <div>
+              <img class="lessons-title-image" src="http://i67.tinypic.com/9s6zc0.jpg" alt="Lesson 1: OOP: The Basics">
+              <h3 class="lessons-label">OOP: The Basics</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="arrays-and-arraylists.html">
+            <div>
+              <img class="lessons-title-image" src="http://i68.tinypic.com/15cijhk.jpg" alt="Lesson 2: Arrays and ArrayLists">
+              <h3 class="lessons-label">Arrays And ArrayLists</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="recursion.html">
+            <div>
+              <img class="lessons-title-image" src="http://i66.tinypic.com/2a8goxv.jpg" alt="Lesson 3: Recursion">
+              <h3 class="lessons-label">Recursion</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="search-and-sort-algorithms.html">
+            <div>
+              <img class="lessons-title-image" src="http://i64.tinypic.com/zk36zn.jpg" alt="Lesson 4: Search and Sort Algorithms">
+              <h3 class="lessons-label">Search & Sort Algorithms</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="oop-advanced.html">
+            <div>
+              <img class="lessons-title-image" src="http://i66.tinypic.com/27x1g5g.jpg" alt="Lesson 5: OOP: Advanced">
+              <h3 class="lessons-label">OOP: Advanced</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="old-projects.html">
+            <div>
+              <img class="lessons-title-image" src="http://i65.tinypic.com/sbq5hy.jpg" alt="Past Projects">
+              <h3 class="lessons-label">Past Projects</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="final-project.html">
+            <div>
+              <img class="lessons-title-image" src="http://i65.tinypic.com/9lcvb8.jpg" alt="Final Project">
+              <h3 class="lessons-label">Final Project</h3>
+            </div>
+			</a>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class= "header-icon">
+        <a href="sources.html"><h3>Sources</h3></a>
+	</div>
+  </div>
+
+  <!-- OOP: Advanced -->
+  <img class="lessons-background-image background-tint" src="https://cdn-images-1.medium.com/max/800/1*0MgWZ0Nkl1aFIQ7IBFa1Ag.jpeg" alt="About Me Background">
+
+  <div class="lessons-container">
+    <h1 class="lessons-title">OOP: Advanced</h1>
+	<h2 class="lessons-subtitle">Introduction</h2>
+    <p class="lessons-standard-content">
+      In your very first lesson, you learned the basics of OOP, such as how classes can be used to create instances and more. However, there's still lots more to learn about OOP, as it possesses even more
+	  unique characteristics. In this section, we will discuss the concepts of Inheritance and Polymorphism. As well, we will cover the process of UML Project Design, 
+	  which is used in the planning of OOP projects.
+    </p>
+    <h2 class="lessons-subtitle">Inheritance</h2>
+    <p class="lessons-standard-content">
+      Let's revisit an old example, our <em>Car</em> class:
+    </p>
+	<pre class="lessons-code-example">
+ public class Car{
+    String brand;
+    String colour;
+    int litreCapacity;
+    String licensePlateNumber;
+    int distanceTraveled;
+    public Car(String c, String b, int lCapacity, int lPNumber){
+       brand = b;
+       colour = c;
+       litreCapacity = lCapacity;
+       licensePlateNumber = lPNumber;	
+       distanceTraveled = 0;	   
+    }
+    public void driveDistance(){
+       distanceTraveled = distanceTraveled + 50;
+       litreCapacity = litreCapacity - 50;
+    }
+    public void changeColour(String c){
+       colour = c;
+    }
+    public void changeLicensePlate(String lPN){
+       licensePlateNumber = lPN;
+    }
+    public static void main(String[] args){
+       Car ourCar = new Car("blue", "Honda", 250, "A1B 2C3");
+    }
+ }	
+	</pre>
+	<p class="lessons-standard-content">
+      There have been a few modifications in the fields and methods of our class, but nothing that doesn't describe a car. Looking at this, let's create a new class, called <em>ElectricCar</em>.
+    </p>
+	<pre class="lessons-code-example">
+ public class ElectricCar{
+    String brand;
+    String colour;
+    int electricCapacity;
+    String licensePlateNumber;
+    int distanceTraveled;
+    public Car(String c, String b, int eCapacity, int lPNumber){
+       brand = b;
+       colour = c;
+       electricCapacity = eCapacity;
+       licensePlateNumber = lPNumber;	
+       distanceTraveled = 0;	   
+    }
+    public void driveDistance(){
+       distanceTraveled = distanceTraveled + 50;
+       electricCapacity = electricCapacity - 50;
+    }
+    public void changeColour(String c){
+       colour = c;
+    }
+    public void changeLicensePlate(String lPN){
+       licensePlateNumber = lPN;
+    }
+    public static void main(String[] args){
+       ElectricCar ourCar = new ElectricCar("red", "Tesla", 
+       250, "D4E 5F6");
+    }
+ }	
+	</pre>
+	<p class="lessons-standard-content">
+      Our <em>ElectricCar</em> class looks pretty similar to our <em>Car</em> class. In fact, it shares many of the same fields and methods. Instead of essentially rewriting the code from our <em>Car</em>
+	  class, is there another way to create our <em>ElectricCar</em> class? It turns out, there is, using a concept called Inheritance. For example, our <em>ElectricCar</em> class could also look like this:
+    </p>
+	<pre class="lessons-code-example">
+ public class ElectricCar extends Car{
+    int electricCapacity;
+    public ElectricCar(String c, String b, int eCapacity, 
+    int lPNumber){
+      super(b, c, 0, lPNumber);
+      electricCapacity = eCapacity;   
+    }
+    public static void main(String[] args){
+       ElectricCar ourCar = new ElectricCar("red", "Tesla", 
+       250, "D4E 5F6");
+    }
+ }	
+	</pre>
+	<p class="lessons-standard-content">
+      Now our class has much less code, but still possesses the same fields and methods from before. This is because the <em>ElectricCar</em> class now <em>extends</em> the <em>Car</em> class. 
+	  In real life, we can imagine that an electric car is an extension of a regular car; it possesses many of the same properties of a car, but has some added uniqueness (it runs on electricity, not
+	  gas). In programming, by extending the <em>Car</em>, our <em>ElectricCar</em> class gains access to its fields and methods. At the same time, the <em>ElectricCar</em> class has some unique attributes of
+	  its own: It has a new field, called electricCapacity.	  
+    </p>
+	<h2 class="lessons-subtitle">Polymorphism</h2>
+	<p class="lessons-standard-content">
+      Polymorphism is the concept that a single object can represent multiple different things. For example, if we look at our Car class, we notice that the driveDistance method still only alters
+	  the value of litreCapacity. This is a problem for our ElectricCar class, which uses the field electricCapacity. We need to alter the driveDistance method in the ElectricCar class so that it 
+	  acts appropriately with the electricCar fields.
+    </p>
+	<pre class="lessons-code-example">
+ public class ElectricCar extends Car{
+    int electricCapacity;
+    public ElectricCar(String c, String b, int eCapacity, 
+    int lPNumber){
+      super(b, c, 0, lPNumber);
+      electricCapacity = eCapacity;   
+    }
+    public void driveDistance(){
+      distanceTraveled = distanceTraveled + 50;
+      electricCapacity = electricCapacity - 50;
+    }
+    public static void main(String[] args){
+       ElectricCar ourCar = new ElectricCar("red", "Tesla", 
+       250, "D4E 5F6");
+    }
+ }	
+	</pre>
+	<p class="lessons-standard-content">
+      By rewriting the driveDistance method in our ElectricCar class, we modified the method so that it performs a different action in the <em>ElectricCar</em> class.
+	  However, the driveDistance method still performs its original function in the Car class. This is an example of overriding methods, which is 
+	  a form of Polymorphism. Now, the driveDistance method can perform multiple actions in different classes.
+    </p>
+	<p class="lessons-standard-content">
+      You may have noticed that our driveDistance() method only alters our distanceTraveled and electricCapacity fields by a flat amount of 50.
+	  But what if we wanted to drive a distance that wasn't 50 units long? We could rewrite our current distanceTraveled method to accept a parameter for
+	  the distance traveled, but we could also create another driveDistance method inside our class.
+    </p>
+	<pre class="lessons-code-example">
+ public class ElectricCar extends Car{
+    int electricCapacity;
+    public ElectricCar(String c, String b, int eCapacity, 
+    int lPNumber){
+      super(b, c, 0, lPNumber);
+      electricCapacity = eCapacity;   
+    }
+    public void driveDistance(){
+      distanceTraveled = distanceTraveled + 50;
+      electricCapacity = electricCapacity - 50;
+    }
+    public void driveDistance(int dTraveled){
+      distanceTraveled = distanceTraveled + dTraveled;
+      electricCapacity = electricCapacity - dTraveled;
+    }
+    public static void main(String[] args){
+       ElectricCar ourCar = new ElectricCar("red", "Tesla", 
+       250, "D4E 5F6");
+    }
+ }	
+	</pre>
+	<p class="lessons-standard-content">
+      This brings up an issue: How will the program know which driveDistance method its supposed to run, if they both share the same name?
+	  Simple, whether or not the driveDistance method is accompanied by an integer parameter. This type of Polymorphism is called overloading
+	  methods, where multiple versions of a method exist within the same class.
+    </p>
+	<h2 class="lessons-subtitle">UML Project Design</h2>
+	<p class="lessons-standard-content">
+      We know a lot about how to write a program, but how do programmers plan out their creations beforehand? They use a Unified Modeling Language, or UML, to 
+	  specify what their program will look like in the future. For example, here is the layout of a class displayed in a UML:
+    </p>
+	<div class= "lessons-image-format">
+	  <img class= "lessons-image-example"src="http://i66.tinypic.com/e6rj1j.jpg" alt="An image of a class UML">
+	</div>
+	<p class="lessons-standard-content">
+      Computer programmers use this universal language to communicate the features and functions of the classes they use in their programs
+    </p>
+	<h2 class="lessons-subtitle">Conclusion</h2>
+	<p class="lessons-standard-content">
+      This is the end of OOP: Advanced. Hopefully you discovered some new things about OOP you didn't know before, and can apply these new concepts 
+	  when creating or modifying your existing programs.
+    </p>
+	<h3 class="lessons-previous-topic">Previous Lesson: <a href= "search-and-sort-algorithms.html">Search & Sort Algorithms</a></h3>
+	<h3 class="lessons-next-topic">Next Lesson: <a href= "old-projects.html">Old Projects</a></h3>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Final Portfolio - Richard Hanxu</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+<img class= "logo" src="http://i63.tinypic.com/358x7nq.png" alt="Final Portfolio"></a>
+ <!-- Header Container -->
+  <div class="header-container">
+    <div class= "header-icon">
+        <a href="home.html"><h3>Home</h3></a>
+	</div>
+    <div id="lessons-icon" class="header-icon">
+      <a href="arrays-and-arraylists.html"><h3>Lessons</h3></a>
+      <div class="lessons-menu">
+        <div class="lessons-grid">
+          <div class="lessons-grid-box">
+		    <a href="about-me.html">
+            <div>
+              <img class="lessons-title-image" src="http://i68.tinypic.com/28mgrd1.jpg" alt="About Me">
+              <h3 class="lessons-label">About Me</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="oop-basics.html">
+            <div>
+              <img class="lessons-title-image" src="http://i67.tinypic.com/9s6zc0.jpg" alt="Lesson 1: OOP: The Basics">
+              <h3 class="lessons-label">OOP: The Basics</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="arrays-and-arraylists.html">
+            <div>
+              <img class="lessons-title-image" src="http://i68.tinypic.com/15cijhk.jpg" alt="Lesson 2: Arrays and ArrayLists">
+              <h3 class="lessons-label">Arrays And ArrayLists</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="recursion.html">
+            <div>
+              <img class="lessons-title-image" src="http://i66.tinypic.com/2a8goxv.jpg" alt="Lesson 3: Recursion">
+              <h3 class="lessons-label">Recursion</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="search-and-sort-algorithms.html">
+            <div>
+              <img class="lessons-title-image" src="http://i64.tinypic.com/zk36zn.jpg" alt="Lesson 4: Search and Sort Algorithms">
+              <h3 class="lessons-label">Search & Sort Algorithms</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="oop-advanced.html">
+            <div>
+              <img class="lessons-title-image" src="http://i66.tinypic.com/27x1g5g.jpg" alt="Lesson 5: OOP: Advanced">
+              <h3 class="lessons-label">OOP: Advanced</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="old-projects.html">
+            <div>
+              <img class="lessons-title-image" src="http://i65.tinypic.com/sbq5hy.jpg" alt="Past Projects">
+              <h3 class="lessons-label">Past Projects</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="final-project.html">
+            <div>
+              <img class="lessons-title-image" src="http://i65.tinypic.com/9lcvb8.jpg" alt="Final Project">
+              <h3 class="lessons-label">Final Project</h3>
+            </div>
+			</a>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class= "header-icon">
+        <a href="sources.html"><h3>Sources</h3></a>
+	</div>
+  </div>
+
+  <!-- Arrays & ArrayLists -->
+  <img class="lessons-background-image" src="http://i67.tinypic.com/34rf5ec.png" alt="Arrays and ArrayLists Background">
+  <div class="lessons-container">
+    <h1 class="lessons-title">Arrays & ArrayLists</h1>
+	<h2 class="lessons-subtitle">Introduction</h2>
+    <p class="lessons-standard-content">
+      You are given the task of writing a program that will accept 10 integers and output their sum. How would you do this? You could create a field for each
+	  individual integer, and initialize them with the user's input, but that would be tedious and repetitive work. If this was in real life, you could easily record the integers onto a list
+	  and compute their sum afterwards; is there a way we could do that with programming?
+    </p>
+    <h2 class="lessons-subtitle">Arrays</h2>
+    <p class="lessons-standard-content">
+      An array is the programming equivalent of a list; it is a single field that can store multiple elements, and you can also easily access each individual 
+	  element inside. The declaration of an array looks like this:
+    </p>
+	<pre class="lessons-code-example">
+ <em>Type</em> [] <em>identifier</em>;
+	</pre>
+	<p class="lessons-standard-content">
+      When we are initializing our array, we have to use the new keyword, because arrays are a type of object. Upon initialization, we also have to specify the length
+	  of our array, or how many elements it can store. For our example, let's initialize an array of integers called intList with a length of 10.
+    </p>
+	<pre class="lessons-code-example">
+ int [] intList = new int[10];
+	</pre>
+	<p class="lessons-standard-content">
+      In an array, each individual element is assigned an index, which allows it to be accessed individually from other elements. In an array, the index of the first element
+	  is 0, the second element has an index of 1, the third has an index of 2, and so on. Essentially, for any element with index n, its position in the array is actually n + 1.
+	  It may seem a little confusing at first, but don't worry. It gets easier to remember this concept over time. The syntax for an element of an array (including initialization) looks like
+	  this:
+    </p>
+	<pre class="lessons-code-example">
+ intList[<em>index</em>] = <em>value</em>;
+	</pre>
+	<p class="lessons-standard-content">
+      In order to assign a value to each element in the array, we could use a Scanner class to accept input and do this:
+    </p>
+	<pre class="lessons-code-example">
+ public static void main (String[] args){
+    Scanner input = new Scanner (System.in);
+    int [] intList = new int[10];   
+    intList[0] = input.nextInt();
+    intList[1] = input.nextInt();
+    intList[2] = input.nextInt();
+    intList[3] = input.nextInt();
+    intList[4] = input.nextInt();
+    intList[5] = input.nextInt();
+    intList[6] = input.nextInt();
+    intList[7] = input.nextInt();
+    intList[8] = input.nextInt();
+    intList[9] = input.nextInt();
+ }
+	</pre>
+	<p class="lessons-standard-content">
+      But aesthetically, it's hardly different from if we just created 10 separate fields in the first place. Also, if our array had a length of 100 elements, or
+	  1000, manually assigning each value would be extremely annoying, not to mention boring. Instead, we can use a for loop, which can iterate through each position
+	  of our array:
+    </p>
+	<pre class="lessons-code-example">
+ public static void main (String[] args){
+    Scanner input = new Scanner (System.in);
+    int [] intList = new int[10];   
+    for(int arrayPosition = 0; arrayPosition < intList.length; 
+    arrayPosition++){
+       intList[arrayPosition] = input.nextInt();
+    }
+ }
+	</pre>
+	<p class="lessons-standard-content">
+      Now this code does exactly what it did before, but now it's a lot cleaner. Also, arrayPosition ends when its value is one less than the length of
+	  intList. Think about how the index of an element corresponds to its position in the array to see why this is true. As well, instead of using a literal
+	  as our end condition, we can use the field <em>identifier</em>.length, which returns the length of any given array, for added convenience.
+    </p>
+	<p class="lessons-standard-content">
+      We can then use another for loop to compute the sum of all the elements in the array, and output the sum afterwards. 
+    </p>
+	<pre class="lessons-code-example">
+ public static void main (String[] args){
+    Scanner input = new Scanner (System.in);
+    int [] intList = new int[10];   
+    for(int arrayPosition = 0; arrayPosition < intList.length;
+    arrayPosition++){
+       intList[arrayPosition] = input.nextInt();
+    }
+    int sum = 0;
+    for(int arrayPosition = 0; arrayPosition < intList.length; 
+    arrayPosition++){
+       sum = sum + intList[arrayPosition];
+    }
+    System.out.println("The sum of all elements in the array 
+    intList[] is: " + sum);
+ }
+	</pre>
+	<p class="lessons-standard-content">
+      There! Now we've used an array to efficiently store and manipulate a group of values!
+    </p>
+	<h2 class="lessons-subtitle">ArrayLists</h2>
+	<p class="lessons-standard-content">
+      However, arrays have one fallacy: You can't adjust their length after they've been initialized. Thus, if we wanted to 
+	  make a list to record the sum of an unknown amount of integers, an array wouldn't work. For example, imagine this problem:
+    </p>
+	<pre class="lessons-code-example">
+ Create a program that will continuously accept 
+ integer inputs until the integer 0 is detected.
+ When this integer is detected, the program will 
+ stop accepting integers and output the sum.
+	</pre>
+	<p class="lessons-standard-content">
+      To solve this problem, we would need an array that could change its size accordingly. This is a moment where we would use an ArrayList. ArrayLists
+	  are similar to arrays, except that ArrayLists don't have a given size. Thus, their size can change throughout the course of a program. The declaration and initialization of an ArrayList is as follows:
+	  this:
+    </p>
+	<pre class="lessons-code-example">
+ ArrayList<<em>Type</em>> <em>identifier</em> = new ArrayList<<em>Type</em>> ();
+	</pre>
+	<p class="lessons-standard-content">
+      Since for our purposes we want to create an ArrayList of integers, our ArrayList initialization would resemble this:
+    </p>
+	<pre class="lessons-code-example">
+ ArrayList<span>&#10092;</span>Integer<span>&#10093;</span> intArrayList = new ArrayList<span>&#10092;</span>Integer<span>&#10093;</span> ();
+	</pre>
+	<p class="lessons-standard-content">
+      The following syntax is used to add an element to the ArrayList:
+	</p>
+	<pre class="lessons-code-example">
+ <em>identifier</em>.add(<em>value</em>);
+	</pre>
+	<p class="lessons-standard-content">
+      If the value entered is the only parameter, the value will be added to the end of the ArrayList. However, to insert a value into 
+	  a specific index, another iteration of the <em>add</em> method can be called:
+	</p>
+	<pre class="lessons-code-example">
+ <em>identifier</em>.add(<em>index</em>, <em>value</em>);
+	</pre>
+	<p class="lessons-standard-content">
+      If there is a value already present in the index where we want to insert our new value, the original value and all values after it
+	  are shifted one index to the right, and our new value is inserted into the now empty index.
+	</p>
+	<p class="lessons-standard-content">
+      If we want to access an element in our ArrayList, we have to use a special method called the <em>get</em> method. This method will allow us to
+	  access the value at a specific index of the ArrayList.
+	</p>
+	<pre class="lessons-code-example">
+ <em>identifier</em>.get(<em>index</em>);
+	</pre>
+	<p class="lessons-standard-content">
+      Now that we've learned how to use an ArrayList, we can solve our example problem. First, we need to use the Scanner class to accept input
+	  and record them in an ArrayList. We also want to stop accepting input when the value inputted is 0. We can accomplish this using a while 
+	  loop:
+	</p>
+	<pre class="lessons-code-example">
+ public static void main (String[] args){
+    Scanner input = new Scanner (System.in);
+    ArrayList <span>&#10092;</span>Integer<span>&#10093;</span> intArrayList = new ArrayList<span>&#10092;</span>Integer<span>&#10093;</span>();
+    int num = input.nextInt();
+    while(num != 0){
+       intArrayList.add(num);
+       num = input.nextInt();
+    }
+ }
+	</pre>
+	<p class="lessons-standard-content">
+      Using a for loop, we can then output the sum using a method similar to the one we used in our array example. There is one difference however,
+	  instead of using length to get the size of our ArrayList, we use a method called size().
+	</p>
+	<pre class="lessons-code-example">
+ public static void main (String[] args){
+    Scanner input = new Scanner (System.in);
+    ArrayList <Integer> intArrayList = new ArrayList<Integer>();
+    int num = input.nextInt();
+    while(num != 0){
+       intArrayList.add(num);
+       num = input.nextInt();
+    }
+    int sum = 0;
+    for(int position = 0; position < intArrayList.size(); 
+    position++){
+       sum = sum + intArrayList.get(position);
+    }
+    System.out.println("The sum of all elements in the ArrayList 
+    intArrayList is: " + sum);
+ }
+	</pre>
+	<p class="lessons-standard-content">
+      If an ArrayList can do everything an array can but more, why don't we always use ArrayLists? Well, it turns out that in order to create an 
+	  ArrayList, a lot more storage is required. Thus, you should try to keep your usage of ArrayLists down to a minimum, meaning that you should
+	  only use ArrayLists when arrays won't work.
+	</p>
+	<h2 class="lessons-subtitle">Conclusion</h2>
+	<p class="lessons-standard-content">
+     In this lesson, you learned about Arrays and ArrayLists. Besides their purposes, we also learned the best way to initialize them, as well as 
+	 how to access their individual elements. So the next time you find yourself facing a problem, and you feel that some sort of list
+	 is required, don't be afraid to apply your newly learned knowledge in Arrays and ArrayLists!
+	</p>
+	<h3 class="lessons-previous-topic">Previous Lesson: <a href= "oop-basics.html">OOP: The Basics</a></h3>
+	<h3 class="lessons-next-topic">Next Lesson: <a href= "recursion.html">Recursion</a></h3>
+  </div>
+</body>
+
+</html>

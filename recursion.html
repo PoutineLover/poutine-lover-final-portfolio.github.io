@@ -1,0 +1,223 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Final Portfolio - Richard Hanxu</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+<img class= "logo" src="http://i63.tinypic.com/358x7nq.png" alt="Final Portfolio"></a>
+<!-- Header Container -->
+  <div class="header-container">
+    <div class= "header-icon">
+        <a href="home.html"><h3>Home</h3></a>
+	</div>
+    <div id="lessons-icon" class="header-icon">
+      <a href="recursion.html"><h3>Lessons</h3></a>
+      <div class="lessons-menu">
+        <div class="lessons-grid">
+          <div class="lessons-grid-box">
+		    <a href="about-me.html">
+            <div>
+              <img class="lessons-title-image" src="http://i68.tinypic.com/28mgrd1.jpg" alt="About Me">
+              <h3 class="lessons-label">About Me</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="oop-basics.html">
+            <div>
+              <img class="lessons-title-image" src="http://i67.tinypic.com/9s6zc0.jpg" alt="Lesson 1: OOP: The Basics">
+              <h3 class="lessons-label">OOP: The Basics</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="arrays-and-arraylists.html">
+            <div>
+              <img class="lessons-title-image" src="http://i68.tinypic.com/15cijhk.jpg" alt="Lesson 2: Arrays and ArrayLists">
+              <h3 class="lessons-label">Arrays And ArrayLists</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="recursion.html">
+            <div>
+              <img class="lessons-title-image" src="http://i66.tinypic.com/2a8goxv.jpg" alt="Lesson 3: Recursion">
+              <h3 class="lessons-label">Recursion</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="search-and-sort-algorithms.html">
+            <div>
+              <img class="lessons-title-image" src="http://i64.tinypic.com/zk36zn.jpg" alt="Lesson 4: Search and Sort Algorithms">
+              <h3 class="lessons-label">Search & Sort Algorithms</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="oop-advanced.html">
+            <div>
+              <img class="lessons-title-image" src="http://i66.tinypic.com/27x1g5g.jpg" alt="Lesson 5: OOP: Advanced">
+              <h3 class="lessons-label">OOP: Advanced</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="old-projects.html">
+            <div>
+              <img class="lessons-title-image" src="http://i65.tinypic.com/sbq5hy.jpg" alt="Past Projects">
+              <h3 class="lessons-label">Past Projects</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="final-project.html">
+            <div>
+              <img class="lessons-title-image" src="http://i65.tinypic.com/9lcvb8.jpg" alt="Final Project">
+              <h3 class="lessons-label">Final Project</h3>
+            </div>
+			</a>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class= "header-icon">
+        <a href="sources.html"><h3>Sources</h3></a>
+	</div>
+  </div>
+
+  <!-- Recursion -->
+  <img class="lessons-background-image" id="oop-2" src="http://i65.tinypic.com/qzenit.png" alt="About Me Background">
+
+  <div class="lessons-container">
+    <h1 class="lessons-title">Recursion</h1>
+	<h2 class="lessons-subtitle">Introduction</h2>
+    <p class="lessons-standard-content">
+      A factorial (!) is a mathematical operation that applies to integers. Given a number n, n factorial is the product of every number from 1 to n.
+	  For example, 3! is the same as 1 <span>&#215;</span> 2 <span>&#215;</span> 3, or 6. Could we write a program that could calculate the factorial of
+	  any number?
+    </p>
+	<p class="lessons-standard-content">
+      One way we could do this is by using a for loop to access each integer that appears before the user's input.
+    </p>
+	<pre class="lessons-code-example">
+ public static void main (String[] args){
+    Scanner input = new Scanner(System.in);
+    int factorial = input.nextInt();
+    int product = 1;	
+    for(int number = 1; number <= factorial; number++){
+       product = product * number;		
+    }
+    System.out.println(factorial + " factorial is equivalent to: 
+    " + product);
+ }
+	</pre>
+	<p class="lessons-standard-content">
+      This solution works, but there is another way to do it without using a loop: recursion
+    </p>
+	<h2 class="lessons-subtitle">Recursion</h2>
+	<p class="lessons-standard-content">
+      Recursion is when an object is defined using a reference to itself. Some examples of this in real life are: 
+	  <ul class="lessons-standard-content">
+	     <li>A bus stop is connected to a certain stop if it is either the requested stop in question, or if it is connected to another bus stop that <em>is</em> connected to the stop.</li>
+		 <li>A company is owned by Google if it is Google, is owned by Google, or is owned by another company that itself is owned by Google.</li>
+		 <li>An electric appliance is being charged if it is connected to an outlet, or if it is connected to another electric appliance that itself is connected to an outlet.</li>
+	  </ul>
+    </p>
+	<p class="lessons-standard-content">
+      There are many examples of recursion in the real world than those I just mentioned. It may seem like a difficult concept at first, but it becomes
+	  easier to use the more you use it. 	  
+    </p>
+	<p class="lessons-standard-content">
+      You may have noticed that <strong>despite the repetition in recursive definitions, there is eventually an end</strong>. For example, when checking if a bus stop
+	  is connected to a certain station, we will check for two things: First, we will check if the station that we are at is the station we are looking for.
+	  If it is, we're done; we determined that the bus stop is connected to the stop we're looking for. However, if we still haven't found our station,
+	  we will then check if another stop can be visited from our position, one that we haven't checked yet. If there is an unvisited stop, we will go to that
+	  stop, and perform the same set of actions that we just made on this current stop. But if there are no further stops to check, then we know that we 
+	  cannot reach our target stop from our current position. One way or another, we will either realize that there is, or isn't, a path to our destination. 
+    </p>
+	<p class="lessons-standard-content">
+      In programming, most recursive functions are formatted as methods. Thus, our factorial function would appear something like this:
+    </p>
+	<pre class="lessons-code-example">
+ public int factorial(int number){
+   /*Implementation will follow*/
+ }  
+	</pre>
+	<h2 class="lessons-subtitle">Format Of A Recursive Method</h2>
+	<p class="lessons-standard-content">
+      In a recursive body, there is always a <strong>base case</strong>, and a <strong>recursive call</strong>. The base case
+      is a condition, that if met, ends the recursive function. In our bus example, we actually have two base cases. Whether or not the station we
+      we are checking is the destination, and if it isn't, whether there is another stop that we can check. Thus, the recursive function would end if 
+	  we found the destination, or if we didn't find it and reached a dead end.
+    </p>
+	<p class="lessons-standard-content">
+      Recursive functions also have a recursive call. This is the part of the function that refers to itself. For example, if the bus stop we are currently
+	  checking is not our destination, but we have an adjacent station we could check, then the recursive call is the act of repeating the same inspection we just made, on our adjacent stop.
+	  If that stop also isn't our destination, but we still have another possible station we could check, then we would repeat the same process, and so on, until
+	  one of the base cases is met.
+    </p>
+	<p class="lessons-standard-content">
+      Using what we now know, we can attempt to create a method that will return the factorial of any number. Let's start with trying to find the base case of 
+	  our recursive method. If we think about it, every factorial includes 1 factorial as a factor (see this for yourself). 1! is also the smallest possible factorial, and thus, we know that its
+	  value is always 1, without requiring knowledge of any other factorial. We can use this to set up our base case.
+	</p>
+	<pre class="lessons-code-example">
+ public int factorial(int number){
+   if(number == 1){
+      return 1;
+   }
+ }  
+	</pre>
+	<p class="lessons-standard-content">
+      What about our recursive call? We need to create a recursive call so that eventually, it will call factorial(1) so that our program can end.
+	  To do this, the integer parameter must decrease each time we call another iteration of factorial. At the same time, we want to somehow include the integer of our current call
+	  in our final product. We can accomplish both with the following lines of code:
+	</p>
+	<pre class="lessons-code-example">
+ public int factorial(int number){
+   if(number == 1){
+      return 1;
+   }
+   return number * factorial(number - 1);
+ }  
+	</pre>
+	<p class="lessons-standard-content">
+      Now, our method has a base case, and it also has a recursive call. If we trace our method with an input of 4, we can see that the method returns the correct answer, 24: 
+	</p>
+	<h2 class= "lessons-subtitle">Recursion Versus Loops<h2>
+	<p class="lessons-standard-content">
+      Recursion has some advantages over loops. First, recursion often provides greater clarity. After all, if you understand the base case and the recursive call, then
+	  you now know how the entire method works. 
+	</p>
+	<p class= "lessons-standard-content" style="font-weight: none">
+      However, recursion also has it flaws. Space is created in the program’s storage, or “stack”, whenever a method is called, and is removed upon its completion. In the case of recursion, 
+	  whose implementations include further calls to itself, the recursive method only ends when its “final” repetition finishes. 
+	  Thus, the space required for a recursive function is proportional to the number of times it calls itself, which can lead to storage problems.
+	</p>
+	<h2 class= "lessons-subtitle">Conclusion<h2>
+	<p class="lessons-standard-content">
+      Recursion can be used in almost any situation that would regularly require a loop. However, when you choose to use it is up to you. You may decide that
+	  you value storage over clarity, and continue to use loops in programming. But if you like an elegant solution to your programming problems, then recursion
+	  may be the method of choice for you.
+	</p>
+    <h3 class="lessons-previous-topic">Previous Lesson: <a href= "arrays-and-arraylists.html">Arrays & ArrayLists</a></h3>
+	<h3 class="lessons-next-topic">Next Lesson: <a href= "search-and-sort-algorithms.html">Search and Sort Algorithms</a></h3>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Final Portfolio - Richard Hanxu</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+<img class= "logo" src="http://i63.tinypic.com/358x7nq.png" alt="Final Portfolio"></a>
+<!-- Header Container -->
+  <div class="header-container">
+    <div class= "header-icon">
+        <a href="home.html"><h3>Home</h3></a>
+	</div>
+    <div id="lessons-icon" class="header-icon">
+      <a href="oop-basics.html"><h3>Lessons</h3></a>
+      <div class="lessons-menu">
+        <div class="lessons-grid">
+          <div class="lessons-grid-box">
+		    <a href="about-me.html">
+            <div>
+              <img class="lessons-title-image" src="http://i68.tinypic.com/28mgrd1.jpg" alt="About Me">
+              <h3 class="lessons-label">About Me</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="oop-basics.html">
+            <div>
+              <img class="lessons-title-image" src="http://i67.tinypic.com/9s6zc0.jpg" alt="Lesson 1: OOP: The Basics">
+              <h3 class="lessons-label">OOP: The Basics</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="arrays-and-arraylists.html">
+            <div>
+              <img class="lessons-title-image" src="http://i68.tinypic.com/15cijhk.jpg" alt="Lesson 2: Arrays and ArrayLists">
+              <h3 class="lessons-label">Arrays And ArrayLists</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="recursion.html">
+            <div>
+              <img class="lessons-title-image" src="http://i66.tinypic.com/2a8goxv.jpg" alt="Lesson 3: Recursion">
+              <h3 class="lessons-label">Recursion</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="search-and-sort-algorithms.html">
+            <div>
+              <img class="lessons-title-image" src="http://i64.tinypic.com/zk36zn.jpg" alt="Lesson 4: Search and Sort Algorithms">
+              <h3 class="lessons-label">Search & Sort Algorithms</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="oop-advanced.html">
+            <div>
+              <img class="lessons-title-image" src="http://i66.tinypic.com/27x1g5g.jpg" alt="Lesson 5: OOP: Advanced">
+              <h3 class="lessons-label">OOP: Advanced</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="old-projects.html">
+            <div>
+              <img class="lessons-title-image" src="http://i65.tinypic.com/sbq5hy.jpg" alt="Past Projects">
+              <h3 class="lessons-label">Past Projects</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="final-project.html">
+            <div>
+              <img class="lessons-title-image" src="http://i65.tinypic.com/9lcvb8.jpg" alt="Final Project">
+              <h3 class="lessons-label">Final Project</h3>
+            </div>
+			</a>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class= "header-icon">
+        <a href="sources.html"><h3>Sources</h3></a>
+	</div>
+  </div>
+
+  <!-- OOP: The Basics -->
+  <img class="lessons-background-image" src="https://cdn-images-1.medium.com/max/800/1*0MgWZ0Nkl1aFIQ7IBFa1Ag.jpeg" alt="OOP: The Basics Background">
+
+  <div class="lessons-container">
+    <h1 class="lessons-title">OOP: The Basics</h1>
+    <p class="lessons-standard-content">
+      Throughout this lesson, I will be using the Java programming language to demonstrate Object-Oriented Programming. It is also recommended that you have some knowledge of any programming
+	  language (i.e. Java, C++, Python, etc.), as this lesson makes mentions of computer language syntax. 
+	  Lastly, I will continually refer to Object-Oriented Programming in its shortened (and weird sounding) abbreviation, OOP.
+    </p>
+	<h2 class="lessons-subtitle">Introduction</h2>
+    <p class="lessons-standard-content">
+      If I asked you at this moment to describe to me exactly how a car worked, including the purpose of every screw, nut and wire, you probably couldn’t. 
+	  Don't worry, I’m not insulting your intelligence, most people who aren't mechanics don’t know the answer either. 
+	  Even if you did know, it would be extremely difficult to explain to a complete beginner like me how a car is made, or how it functions (“What’s an internal combustion engine?).
+    </p>
+	<p class="lessons-standard-content">
+      However, you would be able to describe some “parts” of the car. For example, the wheels on a car allow it to efficiently move along the ground. 
+	  You could probably describe the properties and purpose of a steering wheel as well. Thus, although you don’t know every single individual part of a car, you still have a solid 
+	  understanding of its abilities and functions, because you can group them into coherent parts.
+    </p>
+	<p class="lessons-standard-content">
+      OOP is the programming equivalent of what we just demonstrated; rather than trying to understand an abstract block of gibberish code,
+      OOP aims to make programming easier for the user, by packaging it into understandable sections.
+    </p>
+    <h2 class="lessons-subtitle">Classes</h2>
+    <p class="lessons-standard-content">
+      So now that we know what OOP tries to accomplish, how exactly does it do this? The main appeal of OOP is its usage of <em>classes</em>. In programming, a class is a container for an object’s 
+	  attributes and functions, but in real-life talk, it means <strong>a template for anything you create</strong>. If we think back to our cars, how many different types of cars are there? Despite their unique properties,
+	  each of those cars is still in essence, a car. In this case, the concept of a car represents our class, because it serves as the template of which we create our objects.
+	  Cars are also just one example of a class; fruits, computers, and even cities, could all serve as a possible class or template!
+    </p>
+	<p class="lessons-standard-content">
+      By creating a template, we establish a base upon which to build our objects. This reduces the need to rewrite repetitive code over and over again when designing similar objects and projects, because we can simply
+	  use our class to create the object in question. 
+    </p>
+	<p class="lessons-standard-content">
+      So now that we've established the purpose of a class, how do we implement this in code? It's actually pretty simple: Every class has an <em>identifier</em>, or a name that we can call to access it. This 
+	  name can only include numbers or characters, but for your own convenience and others, you should give it a name that clearly describes it. For example, we can easily tell the purpose of a <em>Car</em> class.
+	  After the name, the class should be followed by a pair of curly braces, or '{' and '}'. These store the rest of the information in your class, for example, what defines the characteristics of an object made in the
+	  <em>Car</em> class, or what abilities a car has.
+    </p>
+	<pre class="lessons-code-example">
+ public class Car{
+ 
+ }
+	</pre>
+	<h2 class="lessons-subtitle">Instances and Objects</h2>
+    <p class="lessons-standard-content">
+      We've made a Car class resembling a car template, but how would we create a car <em>object</em>? In programming, that car would be referred to as an <em>instance</em> of its class, or a <em>class object</em>. 
+	  Think of an instance as an implementation of a class; if a class is a template of a object, the instance is its physical creation. Also, unlike classes which only act as blueprints, 
+	  instances of a class can be directly manipulated. For example, we use an actual car to drive, not the car's template. Many programs that use OOP run by changing and altering properties of its instances.
+    </p>
+	<p class="lessons-standard-content">
+      Instances of a class are made by declaring an variable of the type of the class we wish to implement. As we're making a instance of the <em>Car</em> class, our new variable's type will be <em>Car</em>. 
+	  As well, the program will only execute statements made in its main method. For now, we can just treat the main method as the terminal where we will run our program.
+    </p>
+	<pre class="lessons-code-example">
+ public class Car{
+    public static void main(String[] args){
+       Car ourCar = new Car();
+    }
+ }
+	</pre>
+	<p class="lessons-standard-content">
+      We still haven't learned how to give our instances unique attributes yet, but don't worry, that's coming up now.
+    </p>
+	<h2 class="lessons-subtitle">Fields</h2>
+    <p class="lessons-standard-content">
+      We know a field as a flat open area usually covered in grass. However, its programming definition is a little different. In this case, fields are characteristics that all instances of a class possess. 
+	  These fields can help to differentiate instances from other classes, as well as from each other if they're from the same class. For example, let's say we had a friend who also owned a car.
+    </p>
+	<pre class="lessons-code-example">
+ public class Car{
+    public static void main(String[] args){
+       Car ourCar = new Car();
+       Car friendsCar = new Car();
+    }
+ }
+	</pre>
+	<p class="lessons-standard-content">
+      How would we tell the difference between the two cars? In real life, the two cars would probably have a lot separating them apart: different colours, different brands, and so on.
+	  In programming, we would describe these traits by using fields to store their values. Let the colour of the <em>Car</em> ourCar be blue, and the colour of friendsCar be black. 
+	  To represent this, we could add the following lines of code:
+    </p>
+	<pre class="lessons-code-example">
+ public class Car{
+    public static void main(String[] args){
+       Car ourCar = new Car();
+       Car friendsCar = new Car();
+       String ourCarColour = "blue";
+       String friendsCarColour = "black";
+    }
+ }	
+	</pre>
+	<p class="lessons-standard-content">
+      However, in OOP we want to associate each field with its object. This means that we don't want fields lying around by themselves in the open, such as in the main method. So how do we do that? It turns out that fields are actually placed after the class declaration,
+	  like this.
+    </p>
+	<pre class="lessons-code-example">
+ public class Car{
+    String carColour;
+    public static void main(String[] args){
+       Car ourCar = new Car();
+       Car friendsCar = new Car();
+    }
+ }	
+	</pre>
+	<p class="lessons-standard-content">
+      Now, instead of declaring two separate variables in the main method, we have one variable, carColour, that will serve as the colour variable for any instance of Car. You may have noticed, however, that this variable
+	  no longer has a value. In order to understand why that is, we have to go over another concept first: methods.
+    </p>
+	<h2 class="lessons-subtitle">Methods</h2>
+    <p class="lessons-standard-content">
+      What actions can a car perform? First of all, we know a car can drive, but it can also stop too. Moreover, it can accelerate, turn, and even run out of gas. In programming, we call these the methods of the car. Methods allow us
+	  to manipulate the fields of our car. For example, a <em>drive</em> method could alter the field recording the distance the car traveled. Here are examples of a few methods that
+	  a car can use:
+    </p>
+	<pre class="lessons-code-example">
+ public class Car{
+    int distanceTraveled;
+    int numberOfTires;
+    public void driveDistance(int kilometres){
+	   distanceTraveled = distanceTraveled + kilometres;
+    }
+    public void popTire(){
+       numberOfTires = numberOfTires - 1;
+    }
+    public static void main(String[] args){
+       Car ourCar = new Car();
+       Car friendsCar = new Car();
+	   ourCar.driveDistance(50);
+    }
+ }	
+	</pre>
+	<p class="lessons-standard-content">
+      As you can see, we've added a few methods that give our instances some capabilities: It can drive a certain amount of kilometres, and it can pop a tire. Obviously, a cars can do much more,
+	  but it allows us to see the implementation of a method. However, we still haven't created a place 
+	  to initialize the fields of our instances. For example, how do we know the original value of numberOfTires before it is manipulated by the method?
+    </p>
+	<h2 class="lessons-subtitle">Constructors</h2>
+    <p class="lessons-standard-content">
+      Constructors are a special kind of method, but instead of performing an action related to an instance's fields, it sets the fields of an instance upon its creation. Constructors share their name with the class they are 
+	  associated with; thus, for our <em>Car</em> class, the identifier of our constructor would be <em>Car</em>. This is what would appear inside our <em>Car</em> constructor:
+    </p>
+	<pre class="lessons-code-example">
+ public class Car{
+    int distanceTraveled;
+    int numberOfTires;
+    public Car(){
+       distanceTraveled = 0;
+       numberOfTires = 4;	   
+    }
+    public void driveDistance(int kilometres){
+       distanceTraveled = distanceTraveled + kilometres;
+    }
+    public void popTire(){
+       numberOfTires = numberOfTires - 1;
+    }
+    public static void main(String[] args){
+       Car ourCar = new Car();
+       Car friendsCar = new Car();
+    }
+ }	
+	</pre>
+	<p class="lessons-standard-content">
+      Now, each instance we create of a <em>Car</em> will have its initial distanceTraveled value set to 0, and its numberOfTires value set to 4. But what about that field, carColour? Its value can be different upon the
+	  creation of an instance (i.e. blue, black, etc.). To solve that, we simply include a parameter inside the constructor accepting a value for carColour.
+    </p>
+	<pre class="lessons-code-example">
+ public class Car{
+    int distanceTraveled;
+    int numberOfTires;
+    String carColour;
+    public Car(String colour){
+       distanceTraveled = 0;
+       numberOfTires = 4;
+       carColour = colour;	   
+    }
+    public void driveDistance(int kilometres){
+       distanceTraveled = distanceTraveled + kilometres;
+    }
+    public void popTire(){
+       numberOfTires = numberOfTires - 1;
+    }
+    public static void main(String[] args){
+       Car ourCar = new Car("blue");
+       Car friendsCar = new Car("black");
+    }
+ }	
+	</pre>
+	<p class="lessons-standard-content">
+      We've modified the constructor, so that it allows the value of carColour to be set by the user. You may have noticed that the instance declarations inside the main method have changed as well:
+	  they now include a String parameter representing the colour of the <em>Car</em> instance.
+    </p>
+	<h2 class="lessons-subtitle">Conclusion</h2>
+	<p class="lessons-standard-content">
+      Using classes, instances, fields, methods, and constructors, we have learned how to create a fully functioning OOP program! However, there's more to OOP than just what's covered in this lesson. If you're
+	  curious to learn more, you can head on over to <a href= "oop-advanced.html">OOP: Advanced</a>, or continue with the regular order of lessons.
+    </p>
+	<h3 class="lessons-previous-topic">Previous Lesson: <a href= "about-me.html">About Me</a></h3>
+    <h3 class="lessons-next-topic">Next Lesson: <a href= "arrays-and-arraylists.html">Arrays & ArrayLists</a></h3>
+  </div>
+</body>
+
+</html>

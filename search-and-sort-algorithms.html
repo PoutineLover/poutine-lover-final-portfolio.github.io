@@ -1,0 +1,302 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Final Portfolio - Richard Hanxu</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+<img class= "logo" src="http://i63.tinypic.com/358x7nq.png" alt="Final Portfolio"></a>
+<!-- Header Container -->
+  <div class="header-container">
+    <div class= "header-icon">
+        <a href="home.html"><h3>Home</h3></a>
+	</div>
+    <div id="lessons-icon" class="header-icon">
+      <a href="search-and-sort-algorithms.html"><h3>Lessons</h3></a>
+      <div class="lessons-menu">
+        <div class="lessons-grid">
+          <div class="lessons-grid-box">
+		    <a href="about-me.html">
+            <div>
+              <img class="lessons-title-image" src="http://i68.tinypic.com/28mgrd1.jpg" alt="About Me">
+              <h3 class="lessons-label">About Me</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="oop-basics.html">
+            <div>
+              <img class="lessons-title-image" src="http://i67.tinypic.com/9s6zc0.jpg" alt="Lesson 1: OOP: The Basics">
+              <h3 class="lessons-label">OOP: The Basics</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="arrays-and-arraylists.html">
+            <div>
+              <img class="lessons-title-image" src="http://i68.tinypic.com/15cijhk.jpg" alt="Lesson 2: Arrays and ArrayLists">
+              <h3 class="lessons-label">Arrays And ArrayLists</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="recursion.html">
+            <div>
+              <img class="lessons-title-image" src="http://i66.tinypic.com/2a8goxv.jpg" alt="Lesson 3: Recursion">
+              <h3 class="lessons-label">Recursion</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="search-and-sort-algorithms.html">
+            <div>
+              <img class="lessons-title-image" src="http://i64.tinypic.com/zk36zn.jpg" alt="Lesson 4: Search and Sort Algorithms">
+              <h3 class="lessons-label">Search & Sort Algorithms</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="oop-advanced.html">
+            <div>
+              <img class="lessons-title-image" src="http://i66.tinypic.com/27x1g5g.jpg" alt="Lesson 5: OOP: Advanced">
+              <h3 class="lessons-label">OOP: Advanced</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="old-projects.html">
+            <div>
+              <img class="lessons-title-image" src="http://i65.tinypic.com/sbq5hy.jpg" alt="Past Projects">
+              <h3 class="lessons-label">Past Projects</h3>
+            </div>
+			</a>
+          </div>
+          <div class="lessons-grid-box">
+		    <a href="final-project.html">
+            <div>
+              <img class="lessons-title-image" src="http://i65.tinypic.com/9lcvb8.jpg" alt="Final Project">
+              <h3 class="lessons-label">Final Project</h3>
+            </div>
+			</a>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class= "header-icon">
+        <a href="sources.html"><h3>Sources</h3></a>
+	</div>
+  </div>
+
+  <!-- Search & Sort Algorithms -->
+  <img class="lessons-background-image" src="http://i68.tinypic.com/29qdphl.png" alt="Search and Sort Algorithms Background">
+  <div class="lessons-container">
+    <h1 class="lessons-title">Search & Sort Algorithms</h1>
+	<h2 class="lessons-subtitle">Introduction</h2>
+    <p class="lessons-standard-content">
+      Sorting and searching algorithms may not seem that important in programming, but learning these algorithms is absolutely necessary if you are planning to
+	  pursue a career in computer science. This lesson will cover the following topics related to search and sort algorithms:
+    </p>
+    <ul class="lessons-standard-content">
+	  <li>Big O Notation</li>
+      <li>Bubble Sort</li>
+	  <li>Selection Sort</li>
+	  <li>Insertion Sort</li>
+	  <li>Linear Search</li>
+	  <li>Binary Search</li>
+	</ul>
+	<h2 class="lessons-subtitle">Big O Notation</h2>
+    <p class="lessons-standard-content">
+      Big O notation is used in programming to describe the time efficiency of an algorithm in proportion to its input size. To do this, it displays some form of manipulation of the letter n, which 
+	  represents the size of the the set being accessed by the algorithm. Big O notation neglects constants when representing efficiency, even if they are present in the algorithm. This is because the influence of the constant becomes 
+	  negligable as n grows larger. For example, an algorithm that makes 5n comparisons for a set of n values would still have a big O notation of n. 
+    </p>
+	<p class="lessons-standard-content">
+      Algorithms can be measured using different criteria: best-case, average-case, and worst-case runtime. What you choose to use depends on your purpose: For example, programmers may use worst-case runtime
+	  to help them select an algorithm althogh may not be the fastest, will always run at least a given time. Here are some common big O notations listed in order of best to worst efficiency.
+    </p>
+	<ul class="lessons-standard-content">
+	  <li>O(1): The algorithm always runs at a constant time independent of n. This is the most preferable runtime, as it doesn't increase with input size.</li>
+      <li>O(log n): The algorithm runtime increases by a factor of log n with relation to an increase in n, and is also the average runtime of binary search.</li>
+	  <li>O(n): The algorithm grows in a linear fashion in relation to n.</li>
+	  <li>O(n<span>&#178;</span>): The algorithm grows in a quadratic fashion in relation to n. This is undesired because the runtime grows exponentially. For example, an increase of 10 in input size would
+	  increase the runtime by a factor of 10<span>&#178;</span>, or 100.</li>
+	</ul>
+	<h2 class="lessons-subtitle">Sort Algorithms</h2>
+	<p class="lessons-standard-content">
+	  Today, there are dozens of sorting algorithms that programmers use in order to sort a set of values. In this lesson, we will cover some basic sorting algorithms. The following algorithms are well known and recognized in
+	  the programming community.
+    </p>
+    <h2 class="lessons-subtitle">Bubble Sort</h2>
+	<p class="lessons-standard-content">
+	  Bubble sort is by far the most basic sorting algorithm. Given a set of values, it will compare each value with the one after it, and switch them if their order is incorrect. Upon reaching the end,
+	  the sort will repeat from the beginning, and so on, until it has made n runs through the entire set. Here is an example of a single run-through of a set of values:
+    </p>
+	<div class= "lessons-image-format">
+	   <img class= "lessons-image-example" src="https://www.opentechguides.com/images/howto/howto_5101.png" alt="An image of bubble sort">
+	</div>
+	<p class="lessons-standard-content">
+	  After the first iteration, the largest value is guaranteed to end up in its proper order. After the second iteration, the second largest, and so on and so forth, until the entire set is sorted. The code for
+	  bubble sort in order to sort the values from smallest to largest appears as this:
+    </p>
+	<pre class="lessons-code-example">
+ public static void bubbleSort(int[] arr) {   
+    int temporaryValue = 0;  
+    for(int iteration = 0; iteration < arr.length; iteration++){  
+       for(int position= 1; position < (arr.length-iteration); 
+       position++){  
+          if(arr[position-1] > arr[position]){   
+             temporaryValue = arr[position-1];  
+             arr[position-1] = arr[position];  
+             arr[position] = temporaryValue;  
+          }                           
+       }  
+    }  
+ }	
+	</pre>
+	<p class="lessons-standard-content">
+	  This sorting algorithm has a best-case, average-case, and worst-case runtime of O(n<span>&#178;</span>). As a result, it is one of the most inefficient sorting algorithms. Though it is hardly used in a professional setting,
+	  it serves as an important stepping-stone to learning more complicated sorting algorithms.
+    </p>
+	<h2 class="lessons-subtitle">Selection Sort</h2>
+	<p class="lessons-standard-content">
+	  Selection sort is somewhat similar to bubble sort where the largest or smallest unsorted value ends up at its proper index each run through the set. However, instead of making adjacent comparisons, selection sort
+	  searches the unsorted section each time specifically for the largest or smallest value. As a result, only one switch is made each iteration, which is between the index of the largest or smallest found value and the index of its 
+	  proper place in the array. 
+    </p>
+	<p class="lessons-standard-content">
+	  The following image demonstrates the appearance of a set after each individual iteration of selection sort is performed on the set. Notice how the position of the orange colour seems to act as a 
+	  boundary between the sorted and unsorted portions of the set. Thus, we can say that selection sort utilises two subsets: a sorted as well as an unsorted section.
+    </p>
+	<div class= "lessons-image-format">
+	   <img class= "lessons-image-example" src="https://www.w3resource.com/w3r_images/selection-short.png" alt="An image of selection sort">
+	</div>
+	<p class="lessons-standard-content">
+	  Here is the following code to sort the values in increasing order for selection sort:
+    </p>
+	<pre class="lessons-code-example">
+ public static void selectionSort(int[] arr) {   
+    int indexOfMinimum;  
+	int temporaryValue;
+    for(int iteration = 0; iteration < arr.length; iteration++){  
+	   indexOfMinimum = position;
+       for(int position= 1; position < (arr.length-iteration); 
+       position++){  
+	      if(arr[position] > arr[indexOfMinimum]){
+			indexOfMinimum = position;
+          }
+       }    
+       temporaryValue = arr[iteration];  
+       arr[iteration] = arr[indexOfMinimum];  
+       arr[indexOfMinimum] = temporaryValue;     
+    }  
+ }	
+	</pre>
+	<p class="lessons-standard-content">
+	  Like bubble sort, selection sort also has a best-case, average-case, and worst-case runtime of O(n<span>&#178;</span>). 
+    </p>
+	<h2 class="lessons-subtitle">Insertion Sort</h2>
+	<p class="lessons-standard-content">
+	  Like selection sort, insertion sort also implements subsets of sorted and unsorted sections while sorting. However, instead of searching for either the largest or smallest value each time and moving it, it simply takes the next unsorted
+	  element and figures out where it belongs relative to the already sorted section. We often do this in real life when we are sorting cards; we sort the first card, then add a card and sort it accordingly, then add another card, and so on and
+	  so forth.
+    </p>
+	<p class="lessons-standard-content">
+	  The following image demonstrates the appearance of a set after each individual iteration of insertion sort is performed on the set. The green indicates the position of the new element being incorporated
+	  into the sorted array, while the arrow demonstrates its eventual final placement.
+    </p>
+	<div class= "lessons-image-format">
+	  <img class= "lessons-image-example" src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/insertionsort.png" alt="An image of insertion sort">
+	</div>
+	<p class="lessons-standard-content">
+	  The code to sort the values of a set in increasing order using insertion sort is as follows:
+    </p>
+	<pre class="lessons-code-example">
+ public static void insertionSort(int[] arr) {   
+    for(int iteration = 0 ; iteration < arr.length; iteration++){
+       int newUnsortedElement = arr[iteration];
+	   int position = iteration - 1;
+	   while (position >= 0 && arr[position] > key) { 
+                arr[position + 1] = arr[position]; 
+                position = position - 1; 
+       } 
+       arr[position + 1] = key;
+    }  
+ }	
+	</pre>
+	<p class="lessons-standard-content">
+	  Again, insertion sort also has a best-case, average-case, and worst-case runtime of O(n<span>&#178;</span>). 
+    </p>
+	<h2 class="lessons-subtitle">Search Algorithms</h2>
+	<p class="lessons-standard-content">
+	  Besides for just sorting, algorithms can also be used to search for an element inside of a given set. Here, we will go over two different methods of searching: linear and binary search.
+    </p>
+	<h2 class="lessons-subtitle">Linear Search</h2>
+	<p class="lessons-standard-content">
+	  This search algorithm starts at the beginning, and searches each index one by one to see if they match the target value. As you might suspect, the code for this is pretty simple:
+    </p>
+	<pre class="lessons-code-example">
+ public static int linearSearch(int[] arr, int targetValue) {   
+    for(int position = 0 ; position < arr.length; position++){
+       if(arr[position] == targetValue){
+          return position;
+       }
+    }  
+    return -1;
+ }	
+	</pre>
+	<h2 class="lessons-subtitle">Binary Search</h2>
+	<p class="lessons-standard-content">
+	  The definition of binary is two. In the case of binary search, the search algorithm continually halves the set, reducing its size until it finds its target element. For example, first, the algorithm
+	  compares the target value to the median value of the set. If the target value matches the median, then great, we've found our position. Otherwise, if the target value is larger, it repeats the process
+	  with the half of the set whose values are larger than the median, and vice versa if the target value is smaller than the median.
+    </p>
+	<pre class="lessons-code-example">
+ public static int binarySearch(int[] arr, int targetValue) {   
+    int lowerBoundOfSection = 0; 
+    int upperBoundOfSection = arr.length - 1; 
+    int median;
+    boolean found = false; 
+    int position = -1; 
+    while (lowerBoundOfSection <= upperBoundOfSection && !found)
+    {
+       middle = (lowerBoundOfSection + top)/2;
+       if (list1[middle] == item){ 
+          found = true;
+          position = median;
+       }
+       else if (list1[middle] < targetValue){
+          lowerBoundOfSection = median + 1;
+       }
+       else{
+          upperBoundOfSection = median - 1;
+       }
+    }
+    return position;
+}
+  </pre>
+  <p class="lessons-standard-content">
+	  The first if statement checks to see if the position of the median matched the target value. The else if statement moved the bottom value to one above the median if it was smaller than our target value,
+	  and finally, the last else statement does the reverse: if the target value was less than the median, the top value is moved to one position below the median.
+   </p>
+   <h2 class="lessons-subtitle">Conclusion</h2>
+   <p class="lessons-standard-content">
+	  Now, you've learned how search and sort algorithms work, as well as how to implement them. Now go ahead and use them in your programs! 
+   </p>
+   <h3 class="lessons-previous-topic">Previous Lesson: <a href= "recursion.html">Recursion</a></h3>
+   <h3 class="lessons-next-topic">Next Lesson: <a href= "oop-advanced.html">OOP: Advanced</a></h3>
+</body>
+
+</html>
